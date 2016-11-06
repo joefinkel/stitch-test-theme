@@ -21,6 +21,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+    <script type="text/javascript" src="https://use.typekit.net/jlf6rqe.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

@@ -260,16 +260,54 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+	font-family: 'responsive-test-font';
+	src:url('fonts/responsive-test-font.eot?uiot0a');
+	src:url('fonts/responsive-test-font.eot?#iefixuiot0a') format('embedded-opentype'),
+		url('fonts/responsive-test-font.woff?uiot0a') format('woff'),
+		url('fonts/responsive-test-font.ttf?uiot0a') format('truetype'),
+		url('fonts/responsive-test-font.svg?uiot0a#responsive-test-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'responsive-test-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e604";
+}
+.icon-banknote:before {
+	content: "\e600";
+}
+.icon-shop:before {
+	content: "\e601";
+}
+.icon-truck:before {
+	content: "\e602";
+}
+
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
+	color: #656f82;
+	font-family: 'proxima-nova';
+	font-size: 18px;
+	line-height: 1.8;
+	font-weight: 300;
 }
 
 h1,
@@ -278,8 +316,12 @@ h3,
 h4,
 h5,
 h6 {
+	color: #292929;
 	clear: both;
+	font-weight: 400;
 }
+h1,
+h2 { font-size: 39px; }
 
 p {
 	margin-bottom: 1.5em;
@@ -510,17 +552,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #000;
 }
 
 a:visited {
-	color: purple;
+	color: #000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #fd9662;
 }
 
 a:focus {
@@ -545,13 +587,18 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
+	margin: 21px 0;
 	padding-left: 0;
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	padding: 5px 15px;
+	font-weight: 600;
 }
 
 .main-navigation a {
@@ -919,11 +966,11 @@ clear: none;
 }
 
 #primary {
-background: #eff3f5 url(http://localhost:8888/wptest/wp-content/uploads/2016/11/full-laptop-hero.png) top right no-repeat;
+background: #eff3f5 url(images/full-laptop-hero.png) top right no-repeat;
 background-size: contain;
 }
 .home-hero {
-padding: 100px 0;
+padding: 30px 0;
 }
 .home-hero h1,
 .home-hero p {
@@ -974,6 +1021,14 @@ padding: 40px 20px;
 }
 
 @media (max-width: 767px) {
+#primary {
+background: #eff3f5 url(images/mobile-centered-laptop-hero.png) bottom center no-repeat;
+background-size: contain;
+padding-bottom: 50%;
+}
+.home-hero {
+padding: 20px;
+}
 .widget-area {
 column-count: 1;
 }
