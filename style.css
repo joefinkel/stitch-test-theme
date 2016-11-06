@@ -967,6 +967,7 @@ clear: none;
 .main-navigation button {
 float: right;
 margin-top: -44px;
+margin-right: 20px;
 border: 0;
 border-radius: 3px;
 font-size: 30px;
@@ -1061,9 +1062,12 @@ font-size: 24px;
 h1, h2, .home-hero p {
 max-width: 100%;
 }
+#masthead {
+padding: 0;
+}
 .site-title {
 margin: 0;
-padding: 5px 0;
+padding: 5px 20px;
 }
 .nav-menu {
 border-top: 1px solid #b6bcbb;
@@ -1076,7 +1080,8 @@ display: block;
 clear: both;
 float: none;
 font-size: 14px;
-border-bottom: 1px solid #b6bcbb;
+border-bottom: 1px solid #dce2e1;
+padding: 8px 20px;
 }
 .main-navigation li a {
 text-align: left;
