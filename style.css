@@ -417,7 +417,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0;
 }
 
 ul {
@@ -463,25 +463,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
+	background: #4d92de;
 	font-size: 12px;
-	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+button:focus {
+  outline: none
+}
+button span {
+color: #fff;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
 button:focus,
@@ -492,8 +491,6 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 input[type="text"],
@@ -958,11 +955,25 @@ float: left;
 display: inline;
 clear: none;
 }
+h1.site-title {
+margin: 0;
+}
 .main-navigation {
 width: auto;
 float: right;
 display: inline;
 clear: none;
+}
+.main-navigation button {
+float: right;
+margin-top: -44px;
+border: 0;
+border-radius: 3px;
+font-size: 30px;
+line-height: 30px;
+width: 50px;
+height: 34px;
+text-align: center;
 }
 
 #primary {
@@ -1040,7 +1051,37 @@ padding: 40px 20px;
 }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+* {
+text-align: center;
+}
+h1, h2 {
+font-size: 24px;
+}
+h1, h2, .home-hero p {
+max-width: 100%;
+}
+.site-title {
+margin: 0;
+padding: 5px 0;
+}
+.nav-menu {
+border-top: 1px solid #b6bcbb;
+}
+.main-navigation {
+margin: 0 auto;
+}
+.main-navigation li {
+display: block;
+clear: both;
+float: none;
+font-size: 14px;
+border-bottom: 1px solid #b6bcbb;
+}
+.main-navigation li a {
+text-align: left;
+
+}
 #primary {
 background: #eff3f5 url(images/mobile-centered-laptop-hero.png) bottom center no-repeat;
 background-size: contain;
