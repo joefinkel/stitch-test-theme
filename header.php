@@ -13,7 +13,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding alignleft">
+		<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost:8888/wptest/wp-content/uploads/2016/11/logo.png" /></a></h1>
 		</div><!-- .site-branding -->
 

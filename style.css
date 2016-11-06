@@ -757,7 +757,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 auto;
 }
 
 .byline,
@@ -773,7 +773,7 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 0 auto;
 }
 
 .page-links {
@@ -905,8 +905,21 @@ object {
 	max-width: 1030px;
 	margin: 0 auto;
 }
+.site-branding {
+width: auto;
+float: left;
+display: inline;
+clear: none;
+}
+.main-navigation {
+width: auto;
+float: right;
+display: inline;
+clear: none;
+}
+
 #primary {
-background: #eff3f5 url(http://localhost:8888/wptest/wp-content/uploads/2016/11/full-laptop-hero.jpg) top right no-repeat;
+background: #eff3f5 url(http://localhost:8888/wptest/wp-content/uploads/2016/11/full-laptop-hero.png) top right no-repeat;
 background-size: contain;
 }
 .home-hero {
